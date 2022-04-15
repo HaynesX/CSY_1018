@@ -34,26 +34,43 @@
 
 
     <main>
-
-        <section class="contact-form-box">
+        <form action="post" class="contact-form-box">
             <h1>Contact Me</h1>
 
-            <div class="form-item">
-                <label class="label-tag">Enter your name</label>
-                <input type="text" id="_name" name="_name" class="text-box" placeholder="Input your name">
-            </div>
+            <section class="form-item">
+                <label class="label-tag">Enter your first name</label>
+                <input type="text" id="nameF" name="nameF" class="text-box" placeholder="Enter first name">
+            </section>
 
-            <div class="form-item">
+            <section class="form-item">
+                <label class="label-tag">Enter your last name</label>
+                <input type="text" id="nameL" name="nameL" class="text-box"  placeholder="Enter last name">
+            </section>
+
+            <section class="form-item text-box-entire-width">
                 <label class="label-tag">Enter your email</label>
-                <input type="text" id="_name" name="_name" class="text-box text-box-email"  placeholder="Input your email">
-            </div>
-            
-            
+                <input type="text" id="email" name="email" class="text-box"  placeholder="Enter email">
+            </section>
+
+            <section class="form-item text-box-entire-width">
+                <label class="label-tag">Your Message</label>
+                <textarea id="message" name="message" class="text-box text-box-dynamic"  placeholder="Enter your message..."></textarea>
+            </section>
+                
+            <section class="form-item text-box-entire-width">
+                <input type="submit" id="submit" name="submit" class="form-button-submit">
+            </section>
+
+
+
+        </form>
+                
 
 
 
 
-        </section>
+
+        
 
 
 

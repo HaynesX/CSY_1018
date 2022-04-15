@@ -149,12 +149,12 @@ footer p {
     padding-right: 8em;
 
     display: grid;
-    grid-template-columns: 50% 50%;
     grid-auto-rows: 9.5em;
     grid-gap: 0.5em;
+    grid-column-gap: 3em
 }
 
-.contact-form-box > h1 {
+.contact-form-box h1 {
     font-size: 2.2em;
     padding-top: 1.8em;
     grid-column: 1/3;
@@ -175,7 +175,6 @@ footer p {
 
 .text-box {
     height: 1em;
-    width: 70%;
     padding: 0.5em;
     font-size: 1.7em;
 
@@ -185,7 +184,22 @@ footer p {
     
 }
 
-.text-box-email {
-    width: 90%;
+.text-box-entire-width {
+    grid-column: 1/3;
 }
+
+.text-box-dynamic {
+    resize: vertical;
+    height: 100%;
+}
+
+.form-button-submit {
+    margin-top: 4em;
+    height: 5.5em;
+    font-weight: 350;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    
+}
+
 
