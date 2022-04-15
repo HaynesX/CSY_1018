@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,400i');
+
+* {
+    margin: 0;
+    padding: 0;;
+}
+
+#header-links a {
+    display: block;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(97, 97, 97);
+    width: 100%;
+  }
+
+
+#hamburger-main label { 
+    font-style: normal;
+    background: rgb(97, 97, 97);
+    display: inline-block; 
+    font-size: 1.2em;
+    padding: 1em;
+    color: white;
+}
+
+#header-links { 
+    display: none; 
+}
+
+
+#hamburger-main input:checked ~ #header-links { 
+    display: block; 
+}

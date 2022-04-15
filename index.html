@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 1000px)" />
     <title>Haynes | Portfolio</title>
 </head>
 
 
 
 <body>
-    <header>
+    <header class="header-top">
         
 
-        <nav>
+        <nav id="hamburger-main">
 
             <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+
 
             <ul id="header-links">
                 <a href="#">Home</a>
@@ -31,8 +35,8 @@
 
 
     <main>
-        <section>
-            <img src="./static/images/main-img.JPG" alt="Profile Picture for Brandon Haynes">
+        <section class="profile-pic-border">
+            <img class="profile-pic" src="./static/images/main-img.JPG" alt="Profile Picture for Brandon Haynes">
         </section>
         <h2>Hello!  My name is Brandon Haynes.</h2>
         <p>I am an undergraduate developer.</p>
