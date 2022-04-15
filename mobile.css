@@ -22,11 +22,12 @@
     color: white;
 }
 
+/* Sets the nav at the top to invisible UNTIL Selector BELOW is checked. */
 #header-links { 
     display: none; 
 }
 
-
+/* The main purpose of this is to change the #header-links ONLY WHEN an input (hamburger icon) is CHECKED / clicked within the #hamburger-main class element. Acts as a button.*/
 #hamburger-main input:checked ~ #header-links { 
     display: block; 
 }

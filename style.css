@@ -5,8 +5,8 @@
     padding: 0;;
 }
 
-
-body {
+/* Defines a basic grid for body */
+.body-index {
     background: #616161;
     color: #fafafa;
     font-weight: 350;
@@ -73,9 +73,13 @@ main h2 {
 
 }
 
-
+/* Stretches header across whole page */
 #header-links { 
     display: flex; 
+}
+
+#header-links a:hover {
+    background: #9a8b8b; 
 }
 
 #header-links a{
@@ -90,24 +94,9 @@ main h2 {
 }
 
 
-
-
-#header-links a:hover {
-    background: #9a8b8b; 
-}
-
 #hamburger-main label, #hamburger { 
     display: none; 
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -117,49 +106,6 @@ main h2 {
     display: block;
 }
 
-
-/* header {
-    padding-right: 3em;
-    padding-left: 3em;
-    padding-top: 1.1em;
-    width: 100%;
-    position: fixed;
-    background-color: #2a2929;
-} */
-
-/* nav {
-    float: right;
-    padding-right: 5em;
-    position: relative;
-} */
-
-
-
-/* nav > ul {
-    float: right;
-    position: relative;
-    padding-top: 0.9em;
-    margin: 0;
-}
-
-nav > ul > li {
-    float: left;
-    position: relative;
-    list-style: none;
-    padding-right: 2.5em;
-}
-
-nav ul li a:link {
-    text-decoration: none;
-}
-
-nav ul li a {
-    color: #fafafa;
-}
-
-nav ul li a:hover {
-    color: #E0E0E0;
-} */
 
 
 footer {
