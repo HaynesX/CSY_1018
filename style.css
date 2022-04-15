@@ -143,14 +143,14 @@ footer p {
 
 .contact-form-box {
     background-color: rgb(46, 43, 43);
-    width: 60%;
+    width: 45em;
     height: 75%;
     padding-left: 8em;
     padding-right: 8em;
 
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-auto-rows: 23%;
+    grid-auto-rows: 9.5em;
     grid-gap: 0.5em;
 }
 
@@ -175,14 +175,17 @@ footer p {
 
 .text-box {
     height: 1em;
-    width: 60%;
+    width: 70%;
     padding: 0.5em;
-    font-size: 1.8em;
+    font-size: 1.7em;
 
     font-weight: 350;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     
-    
+}
+
+.text-box-email {
+    width: 90%;
 }
 
