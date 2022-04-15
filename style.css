@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:400,400i');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 * {
     margin: 0;
@@ -29,6 +30,7 @@
 
 
 
+
 main {
     grid-area: main;
     display: flex;
@@ -43,6 +45,9 @@ main h2 {
     padding-top: 1em;
     text-align: center;
 }
+
+
+
 
 
 
@@ -130,3 +135,54 @@ footer p {
     width: 2em;
     padding-bottom: 1em;
 }
+
+
+
+
+
+
+.contact-form-box {
+    background-color: rgb(46, 43, 43);
+    width: 60%;
+    height: 75%;
+    padding-left: 8em;
+    padding-right: 8em;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 23%;
+    grid-gap: 0.5em;
+}
+
+.contact-form-box > h1 {
+    font-size: 2.2em;
+    padding-top: 1.8em;
+    grid-column: 1/3;
+    border-radius: 3em;
+
+}
+
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-tag {
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+}
+
+.text-box {
+    height: 1em;
+    width: 60%;
+    padding: 0.5em;
+    font-size: 1.8em;
+
+    font-weight: 350;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    
+    
+}
+
