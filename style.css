@@ -37,8 +37,11 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     
+}
+
+.main-height {
+    height: 100vh;
 }
 
 main h2 {
