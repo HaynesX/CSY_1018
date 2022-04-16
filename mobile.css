@@ -74,9 +74,9 @@ main {
 
 
 .portfolio-item {
-    background-color: #969696;
-    width: 15em;
-    height: 15em;
+    position: relative;
+    width: 18em;
+    height: 18em;
     border-radius: 2.5em;
     
 }
