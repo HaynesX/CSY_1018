@@ -79,15 +79,18 @@
     padding-top: 0.5em;
 }
 
-
+/* NOTE: After hours of searching the web, trying many different solutions, it was NECCESSARY TO USE ABSOLUTE&RELATIVE POSITIONING HERE as it is RELATIVE to the parent of portfolio-item. */
 .portfolio-item {
+    position: relative;
     width: 18em;
     height: 18em;
     border-radius: 2.5em;
     
 }
 
+/* NOTE: After hours of searching the web, trying many different solutions, it was NECCESSARY TO USE ABSOLUTE&RELATIVE POSITIONING HERE as it is RELATIVE to the parent of portfolio-item. */
 .portfolio-item-pic {
+    position: relative;
     width: 100%;
     border-radius: 2.5em;
     transition: ease-in-out .5s;
@@ -108,16 +111,19 @@
     opacity: 1;
 }
 
+
+/* NOTE: After hours of searching the web, trying many different solutions, it was NECCESSARY TO USE ABSOLUTE&RELATIVE POSITIONING HERE as it is RELATIVE to the parent of portfolio-item. */
 .portfolio-item-text {
     transition: ease-in-out .5s;
     opacity: 0;
     color: white;
     font-size: 20px;
-    /* top: 50%;
-    left: 50%; */
-    -webkit-transform: translate(0%, -300%);
-    -ms-transform: translate(0%, -300%);
-    transform: translate(0%, -300%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -131,10 +137,6 @@
     column-gap: 3%;
     height: 80vh;
     padding-bottom: 15em;
-    /* row-gap: 1em; */
-    /* padding-bottom: 5em; */
-    /* padding-left: 5em;
-    padding-right: 5em; */
     
 }
 
@@ -156,12 +158,6 @@
     
 }
 
-/* .blog-item-top {
-    border-radius: 0.5em 0.5em 0em 0em;
-    height: 60%;
-    background-color: blue;
-    width: 100%;
-} */
 
 .blog-item-pic {
     border-radius: 0.5em 0.5em 0em 0em;

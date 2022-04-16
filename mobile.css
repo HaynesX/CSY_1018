@@ -74,12 +74,13 @@ main {
 
 
 .portfolio-item {
-    position: relative;
     width: 60%;
     height: 20%;
     border-radius: 2.5em;
     
 }
+
+
 
 
 .blog-main {
