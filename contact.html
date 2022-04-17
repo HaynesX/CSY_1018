@@ -19,11 +19,11 @@
             <input type="checkbox" id="hamburger"/>
 
             <ul id="header-links">
-                <a href="./index.html">Home</a>
-                <a href="./portfolio.html">Portfolio</a>
-                <a href="./blog.html">Blog</a>
-                <a href="./site-report.html">Site Report</a>
-                <a href="./contact.html">Contact</a>
+                <li><a href="./index.html"><p>Home</p></a></li>
+                <li><a href="./portfolio.html"><p>Portfolio</p></a></li>
+                <li><a href="./blog.html"><p>Blog</p></a></li>
+                <li><a href="./site-report.html"><p>Site Report</p></a></li>
+                <li><a href="./contact.html"><p>Contact</p></a></li>
             </ul>
         </nav>
 
@@ -37,29 +37,30 @@
         <form action="mailto:brandon@haynes.bio" method="POST" enctype="text/plain" class="contact-form-box" target="_blank">
             <h1>Contact Me</h1>
 
-            <section class="form-item">
+            <!--CSS Validator Recommended to use DIV-->
+            <div class="form-item">
                 <label class="label-tag">Enter your first name</label>
                 <input type="text" id="nameF" name="nameF" class="text-box" placeholder="Enter first name">
-            </section>
+            </div>
 
-            <section class="form-item">
+            <div class="form-item">
                 <label class="label-tag">Enter your last name</label>
                 <input type="text" id="nameL" name="nameL" class="text-box"  placeholder="Enter last name">
-            </section>
+            </div>
 
-            <section class="form-item text-box-entire-width">
+            <div class="form-item text-box-entire-width">
                 <label class="label-tag">Enter your email</label>
                 <input type="text" id="email" name="email" class="text-box"  placeholder="Enter email">
-            </section>
+            </div>
 
-            <section class="form-item text-box-entire-width">
+            <div class="form-item text-box-entire-width">
                 <label class="label-tag">Your Message</label>
                 <textarea id="message" name="mail" class="text-box text-box-dynamic"  placeholder="Enter your message..."></textarea>
-            </section>
+            </div>
                 
-            <section class="form-item text-box-entire-width">
+            <div class="form-item text-box-entire-width">
                 <input type="submit" id="submit" name="submit" class="form-button-submit">
-            </section>
+            </div>
 
         </form>
                 
