@@ -32,9 +32,6 @@
 
 
 
-
-
-
 .main-class {
     grid-area: main;
     display: flex;
@@ -182,14 +179,14 @@
     
     font-family: 'Bebas Neue', cursive;
     font-style: normal;
-    font-size: 100% + 10em;
+    font-size: 160%;
     
 }
 
 .blog-item-bottom div p {
     
     font-style: normal;
-    font-size: 100% + 5em;
+    font-size: 110%;
     padding-top: 1em;
     text-align: center;
     
@@ -225,8 +222,6 @@
     column-gap: 10%;
     row-gap: 4em;
     height: 1%;
-    /* padding-left: 5em;
-    padding-right: 5em; */
     
 }
 
@@ -304,6 +299,41 @@
 }
 
 
+
+.pros {
+    color: green;
+}
+
+.cons {
+    color: red;
+}
+
+
+.pros-and-cons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 2;
+    text-align: center;
+}
+
+.pros-and-cons h1 {
+    font-size: 10em;
+}
+
+.pros-and-cons ul li {
+    font-size: 2em;
+    list-style: none;
+}
+
+.con::first-letter {
+    color: red;
+}
+
+.pro::first-letter {
+    color: green;
+}
 
 
 
