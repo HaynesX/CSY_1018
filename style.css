@@ -32,6 +32,10 @@
 
 
 
+
+
+
+
 .main-class {
     grid-area: main;
     display: flex;
@@ -50,6 +54,22 @@
     padding-top: 1em;
     text-align: center;
 }
+
+.main-class p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .portfolio-main {
@@ -123,6 +143,21 @@
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .blog-main {
@@ -206,6 +241,19 @@
     text-decoration: initial;
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -358,6 +406,17 @@ video {
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* Index Profile Pic Border */
 .profile-pic-border {
     display: flex;
     justify-content: center;
@@ -368,10 +427,17 @@ video {
     border-color: #fafafa;
     border-width: 0.1em;
     border-style: groove;
-    
-    
-
 }
+
+.profile-pic {
+    width: 19.5em;
+    display: block;
+}
+
+
+
+
+
 
 
 .header-top {
@@ -428,10 +494,25 @@ video {
 
 
 
-.profile-pic {
-    width: 19.5em;
-    display: block;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
