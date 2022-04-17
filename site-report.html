@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 1200px)" />
+    <title>Haynes | Portfolio</title>
+</head>
+
+
+
+<body class="body-index">
+    <header class="header-top">
+        
+
+        <nav id="hamburger-main">
+
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+
+
+            <ul id="header-links">
+                <li><a href="./index.html"><p>Home</p></a></li>
+                <li><a href="./portfolio.html"><p>Portfolio</p></a></li>
+                <li><a href="./blog.html"><p>Blog</p></a></li>
+                <li><a href="./site-report.html"><p>Site Report</p></a></li>
+                <li><a href="./contact.html"><p>Contact</p></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <main class="main-height sitereport-main">
+
+        <h1 class="sitereport-title">Site Report</h1>
+
+        <div class="statistics-info">
+            <section class="sitereport-boxed-item sitereport-timespent">
+                <h2>Hours Spent on Development</h2>
+                <p>18.7 Hours</p>
+            </section>
+    
+            <section class="sitereport-boxed-item sitereport-timespent">
+                <h2>Date Finished</h2>
+                <p>17<sup>th</sup> April 2022</p>
+            </section>
+    
+            <section class="sitereport-boxed-item sitereport-timespent">
+                <h2>Total Commits</h2>
+                <p>47</p>
+            </section>
+
+        </div>
+
+
+
+
+
+
+        <h2 class="sitereport-subtitle">MAJOR Design Choices In Development</h2>
+
+        <p class="paragraph-centered">
+            In terms of the overall layout and syntax of the website, it is a 
+            fairly basic three-layer design with a Header, Main Section and a Footer 
+            to which all align under a CSS Grid. All content on every page is within 
+            the Main Section and may use either a Nested Grid or Flexbox depending on 
+            the viewport (mobile or desktop). This approach is quite simple and allowed 
+            for a consistent layout across all pages. Creating the nav/header was
+            a ball-ache trying to figure out the best way to show and display it as well as 
+            show and hide the hamburger icon.
+        </p>
+
+        <p class="paragraph-centered">
+            In regard to the stylistic choices, I found it quite challenging to match colours 
+            together to create a seamless design. I decided to go with a Black & Taupe approach 
+            styled with White Accents & Text, sometimes Grey. Furthermore, trying to make everything 
+            responsive was both easy and hard. When it came to text and centering and re-sizing, 
+            things got very messy, but I pulled through in the end.
+        </p>
+
+
+
+
+
+
+        <h2 class="sitereport-subtitle">Initial Design Plans</h2>
+
+        <div class="mobile-desktop-mockups">
+            <img class="sitereport-mockup-image" src="./static/images/sitereport-images/desktop-mockup.jpg" alt="desktop-mockup">
+            <img class="sitereport-mockup-image" src="./static/images/sitereport-images/mobile-mockup.jpg" alt="mobile-mockup">
+        </div>
+
+        <img class="sitereport-mockup-image" src="./static/images/sitereport-images/blog-mockup.jpg" alt="blog-mockup">
+        <img class="sitereport-mockup-image" src="./static/images/sitereport-images/portfolio-mockup.jpg" alt="portfolio-mockup">
+        <img class="sitereport-mockup-image" src="./static/images/sitereport-images/contact-mockup.jpg" alt="contact-mockup">
+        <img class="sitereport-mockup-image" src="./static/images/sitereport-images/sitereport-mockup.jpg" alt="sitereport-mockup">
+
+
+
+
+
+        <h2 class="sitereport-subtitle">Index / Home Page</h2>
+
+        <p class="paragraph-centered">
+            For the main landing page, I’ve decided to keep it extremely minimalistic in terms of what is displayed. 
+            I decided to use a profile / avatar image of myself (since the main focus of the site is to show, essentially, 
+            who I am and what I do) and under that, give a brief introduction. 
+            <br><br>
+            This is the first page I started with. It developed an overall base for the rest of the website.
+        </p>
+
+
+
+        <h2 class="sitereport-subtitle">Portfolio Page</h2>
+
+        <p class="paragraph-centered">
+            The portfolio page proved to be extremely difficult to create for the most tedious reasons.
+            As I wanted images as the main item in each row, with text displaying while hovering over it, 
+            I had to make some sacrificial design decisions. Getting the text to display CENTERED and OVER 
+            the image was troublesome. This was because the text naturally will appear below or on the right 
+            of the image as that is how HTML generally works. However, to make it appear centered - WHILE RESPONSIVE TO MOBILE DESIGN – 
+            I HAD to use ABSOLUTE and RELATIVE POSITIONING. This is not really allowed in the assignment, however, 
+            it DOES state that you are not allowed to use absolute positioning “for anything that is ALWAYS on the page”. Key Word here being 'always'. 
+            Luckily, the text used is NOT ‘always’ visible on the page, so – technically – I am safe to use it in this specific circumstance. 
+            Believe me, I scoured the web for about an hour trying to find a solution to which absolute positioning was not used, 
+            and I couldn’t find one. Since the text is relative to the image, it makes sense to use it here. Another option was to use a div, and set
+            the background to the div as an image. This is not best practice as I have to create a css selector for each image. Using absolute positioning 
+            is technically more efficient here.
+
+        </p>
+
+        
+
+        <h2 class="sitereport-subtitle">Blog Page</h2>
+
+        <p class="paragraph-centered">
+            For the blog, it was a similar approach to how I did the portfolio design in terms of the grids and columns and items within each row, however, 
+            the item itself is largely different. To make it blog-esque, I made sure text was always visible below an image along with having a header and 
+            basic text below to give an overview of each blog element. Trying to make this responsive with mobile was quite hard.
+        </p>
+
+        
+
+
+        <h2 class="sitereport-subtitle">Contact Page</h2>
+
+        <p class="paragraph-centered">
+            The contact page varies from many of the other pages. For this, I enclosed the contact form within a container box for the desktop version of the website. 
+            For the mobile version, I put everything in to one column with a green background to show separation of content. I also decided to use a different font 
+            for the form by downloading it dynamically from <a class="no-styling" target="_blank" href="https://fonts.google.com/">fonts.google.com</a>. 
+        </p>
+
+
+
+        <h2 class="sitereport-subtitle">Site Report Page</h2>
+
+        <p class="paragraph-centered">
+            In regard to this current page, I am currently writing this as I work on it. Generally, this page uses mostly a free, 
+            flexible and spur-of-the-moment-styling choice with 4 columns in a grid, containing a range of images relevant to the 
+            development process of the website.
+        </p>
+
+
+
+
+
+        <h2 class="sitereport-subtitle">Pros & Cons of the Website</h2>
+
+        <section class="pros-and-cons">
+            <h2 class="pros">Pros</h2>
+            <ul>
+                <li class="pro">+ Grid Design Incorporated</li>
+                <li class="pro">+ Flex Used</li>
+                <li class="pro">+ Simple, Responsive & Intuitive NavBar</li>
+                <li class="pro">+ Dark Colour Scheme</li>
+                <li class="pro">+ Fully Responsive on Each Page</li>
+                <li class="pro">+ Animations Used</li>
+                <li class="pro">+ 100% CSS & HTML for Simple, Re-Usable Code</li>
+            </ul>
+        </section>
+
+
+        <section class="pros-and-cons">
+            <h2 class="cons">Cons</h2>
+            <ul>
+                <li class="con">- No Javascript Used</li>
+                <li class="con">- Static-Only</li>
+                <li class="con">- No Real Projects to Display, only Fake</li>
+                <li class="con">- I'm More of a Back-End Developer than a Front-End</li>
+                <li class="con">- Didn't use Aside Tag</li>
+                <li class="con">- Development was spread over 2-5 days</li>
+                <li class="con">- No bootstrap and template-solutions used</li>
+            </ul>
+        </section>
+
+
+        <h2 class="sitereport-subtitle">Overall Module Experience</h2>
+
+        <p class="paragraph-centered">
+            Coming from a past of mainly focusing on Back-End Development and paying Front-End Designers to create the HTML & CSS, 
+            this module, so far, has proven to be extremely difficult as I am not very creative, nor am I good at front-end design. 
+            However, I have learnt the absolute basics of HTML and CSS and I am extremely more confident now to how elements align 
+            and know a good set of memorable properties. 
+            <br><br>
+            The problem I have with front-end development is that you either know or don’t know certain tags and selectors and techniques. 
+            You are basically forced to google for solutions and it does not involve as much logical thinking than Back-End Web Development. 
+            I found it extremely problematic and frustrating trying to fix a page and make everything responsive. Not being able to use templates 
+            and bootstrap, for example, made things extremely hard. It was necessary though, as I wouldn’t have learnt the basics. 
+            <br><br>
+            Chris Rafferty, the module leader, has been extremely helpful, and has taught each topic of this module so far really well! 
+            I can really learn from Chris – A solid teacher! 
+            <br><br>
+            Overall, the module so far has been quite fun as well as challenging, and I can’t wait to get in to Year 2 
+            where Back-End Web Development comes in to play because that is what I have experience in. Javascript later on in this module 
+            will be great to learn too!
+        </p>
+
+
+
+
+        <h2 class="sitereport-subtitle">Validation Videos</h2>
+
+        <div class="video-container vid-first">
+            <h2>Index HTML</h2>
+            <video class="vid-file-first" autoplay controls>
+                <source src="./static/videos/webm/index-validation.webm" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-container">
+            <h2>Blog HTML</h2>
+            <video autoplay controls>
+                <source src="./static/videos/webm/blog-validation.webm" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-container">
+            <h2>Portfolio HTML</h2>
+            <video autoplay controls>
+                <source src="./static/videos/webm/portfolio-validation.webm" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-container">
+            <h2>Contact HTML</h2>
+            <video autoplay controls>
+                <source src="./static/videos/webm/contact-validation.webm" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-container">
+            <h2>Site Report HTML</h2>
+            <video autoplay controls>
+                <source src="./static/videos/webm/sitereport-validation.webm" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-container">
+            <h2>Style.css CSS</h2>
+            <video autoplay controls>
+                <source src="./static/videos/webm/style-css-validation.webm" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-container">
+            <h2>Mobile.css CSS</h2>
+            <video autoplay controls>
+                <source src="./static/videos/webm/mobile-css-validation.webm" type="video/mp4">
+            </video>
+        </div>
+       
+
+        
+
+
+
+
+
+
+        
+        
+
+
+        
+
+        
+        
+        
+    </main>
+
+
+    <footer>
+        <a href="https://instagram.com/haynes.beans" target="_blank"><img class="ig-social" src="./static/images/instagram-icon.png" alt="Instagram Social"></a>
+        <p>	&copy; Brandon Haynes 2022</p>
+
+    </footer>
+
+
+</body>
+</html>

@@ -32,9 +32,6 @@
 
 
 
-
-
-
 .main-class {
     grid-area: main;
     display: flex;
@@ -182,14 +179,14 @@
     
     font-family: 'Bebas Neue', cursive;
     font-style: normal;
-    font-size: 100% + 10em;
+    font-size: 160%;
     
 }
 
 .blog-item-bottom div p {
     
     font-style: normal;
-    font-size: 100% + 5em;
+    font-size: 110%;
     padding-top: 1em;
     text-align: center;
     
@@ -210,6 +207,154 @@
     color: white;
 }
 
+
+
+
+
+
+.sitereport-main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: end;
+    column-gap: 10%;
+    row-gap: 4em;
+    height: 1%;
+    
+}
+
+.sitereport-title {
+    grid-column: span 4;
+    grid-row: span 2;
+    text-align: center;
+    font-size: 7em;
+    padding-top: 0.5em;
+}
+
+.statistics-info {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    column-gap: 10%;
+}
+
+
+
+.sitereport-boxed-item {
+    width: 18em;
+    height: 18em;
+    border-radius: 2.5em;
+    background-color: #9d9494;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    row-gap: 1.5em;
+}
+
+.sitereport-boxed-item > h2 {
+    font-size: 2em;
+    
+    color: #2a2929;
+}
+
+.sitereport-boxed-item p {
+    font-size: 2em;
+}
+
+.sitereport-subtitle {
+    grid-column: span 4;
+    font-size: 5em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.sitereport-mockup-image {
+    width: 100%;
+}
+
+.mobile-desktop-mockups {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 10%;
+}
+
+.paragraph-centered {
+    font-family: 'Courier New', Courier, monospace;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.no-styling {
+    text-decoration: none;
+    color: rgb(216, 201, 201);
+}
+
+
+
+.pros {
+    color: green;
+}
+
+.cons {
+    color: red;
+}
+
+
+.pros-and-cons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 2;
+    text-align: center;
+}
+
+.pros-and-cons h2 {
+    font-size: 10em;
+}
+
+.pros-and-cons ul li {
+    font-size: 2em;
+    list-style: none;
+}
+
+.con::first-letter {
+    color: red;
+}
+
+.pro::first-letter {
+    color: green;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 2;
+    text-align: center;
+}
+
+.vid-first {
+    grid-column: span 4;
+}
+
+video {
+    width: 100%;
+}
+
+.vid-file-first {
+    width: 50%;
+}
 
 
 
@@ -245,21 +390,34 @@
     display: flex;
 }
 
-#header-links a:hover {
+#header-links li:hover a{
     background: #9a8b8b;
     transition: ease-in-out .2s;
 }
 
-#header-links a{
-    padding: 2em;
+#header-links li{
+    width: 100%;
+    list-style-type: none;
+}
+
+#header-links li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:5em;
     flex-basis: 0;
     color: white;
     background: #2a2929;
     flex-grow: 1;
     text-decoration: none;
-    list-style: none;
     text-align: center;
     transition: ease-in-out .2s;
+}
+
+#header-links li a p{
+    display: block;
 }
 
 
