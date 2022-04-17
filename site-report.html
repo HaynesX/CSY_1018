@@ -56,6 +56,118 @@
 
         </section>
 
+
+
+
+
+
+        <h2 class="sitereport-subtitle">MAJOR Design Choices In Development</h2>
+
+        <p class="paragraph-centered">
+            In terms of the overall layout and syntax of the website, it is a 
+            fairly basic three-layer design with a Header, Main Section and a Footer 
+            to which all align under a CSS Grid. All content on every page is within 
+            the Main Section and may use either a Nested Grid or Flexbox depending on 
+            the viewport (mobile or desktop). This approach is quite simple and allowed 
+            for a consistent layout across all pages. Creating the nav/header was
+            a ball-ache trying to figure out the best way to show and display it as well as 
+            show and hide the hamburger icon.
+        </p>
+
+        <p class="paragraph-centered">
+            In regard to the stylistic choices, I found it quite challenging to match colours 
+            together to create a seamless design. I decided to go with a Black & Taupe approach 
+            styled with White Accents & Text, sometimes Grey. Furthermore, trying to make everything 
+            responsive was both easy and hard. When it came to text and centering and re-sizing, 
+            things got very messy, but I pulled through in the end.
+        </p>
+
+
+
+
+
+
+        <h2 class="sitereport-subtitle">Initial Design Plans</h2>
+
+        <section class="mobile-desktop-mockups">
+            <img class="sitereport-mockup-image" src="./static/images/sitereport-images/desktop-mockup.jpg">
+            <img class="sitereport-mockup-image" src="./static/images/sitereport-images/mobile-mockup.jpg">
+        </section>
+
+        <img class="sitereport-mockup-image" src="./static/images/sitereport-images/blog-mockup.jpg">
+        <img class="sitereport-mockup-image" src="./static/images/sitereport-images/portfolio-mockup.jpg">
+        <img class="sitereport-mockup-image" src="./static/images/sitereport-images/contact-mockup.jpg">
+        <img class="sitereport-mockup-image" src="./static/images/sitereport-images/sitereport-mockup.jpg">
+
+
+
+
+
+        <h2 class="sitereport-subtitle">Index / Home Page</h2>
+
+        <p class="paragraph-centered">
+            For the main landing page, I’ve decided to keep it extremely minimalistic in terms of what is displayed. 
+            I decided to use a profile / avatar image of myself (since the main focus of the site is to show, essentially, 
+            who I am and what I do) and under that, give a brief introduction. 
+            <br><br>
+            This is the first page I started with. It developed an overall base for the rest of the website.
+        </p>
+
+
+
+        <h2 class="sitereport-subtitle">Portfolio Page</h2>
+
+        <p class="paragraph-centered">
+            The portfolio page proved to be extremely difficult to create for the most tedious reasons.
+            As I wanted images as the main item in each row, with text displaying while hovering over it, 
+            I had to make some sacrificial design decisions. Getting the text to display CENTERED and OVER 
+            the image was troublesome. This was because the text naturally will appear below or on the right 
+            of the image as that is how HTML generally works. However, to make it appear centered - WHILE RESPONSIVE TO MOBILE DESIGN – 
+            I HAD to use ABSOLUTE and RELATIVE POSITIONING. This is not really allowed in the assignment, however, 
+            it DOES state that you are not allowed to use absolute positioning “for anything that is ALWAYS on the page”. Key Word here being 'always'. 
+            Luckily, the text used is NOT ‘always’ visible on the page, so – technically – I am safe to use it in this specific circumstance. 
+            Believe me, I scoured the web for about an hour trying to find a solution to which absolute positioning was not used, 
+            and I couldn’t find one. Since the text is relative to the image, it makes sense to use it here. Another option was to use a div, and set
+            the background to the div as an image. This is not best practice as I have to create a css selector for each image. Using absolute positioning 
+            is technically more efficient here.
+
+        </p>
+
+        
+
+        <h2 class="sitereport-subtitle">Blog Page</h2>
+
+        <p class="paragraph-centered">
+            For the blog, it was a similar approach to how I did the portfolio design in terms of the grids and columns and items within each row, however, 
+            the item itself is largely different. To make it blog-esque, I made sure text was always visible below an image along with having a header and 
+            basic text below to give an overview of each blog element. Trying to make this responsive with mobile was quite hard.
+        </p>
+
+        
+
+
+        <h2 class="sitereport-subtitle">Contact Page</h2>
+
+        <p class="paragraph-centered">
+            The contact page varies from many of the other pages. For this, I enclosed the contact form within a container box for the desktop version of the website. 
+            For the mobile version, I put everything in to one column with a green background to show separation of content. I also decided to use a different font 
+            for the form by downloading it dynamically from <a class="no-styling" target="_blank" href="https://fonts.google.com/">fonts.google.com</a>. 
+        </p>
+
+
+
+        <h2 class="sitereport-subtitle">Site Report Page</h2>
+
+        <p class="paragraph-centered">
+            In regard to this current page, I am currently writing this as I work on it. Generally, this page uses mostly a free, 
+            flexible and spur-of-the-moment-styling choice with 4 columns in a grid, containing a range of images relevant to the 
+            development process of the website.
+        </p>
+
+
+
+
+
         
         
 
