@@ -159,3 +159,19 @@ main {
 
 
 
+.sitereport-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.statistics-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    row-gap: 10em;
+}
